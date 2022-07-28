@@ -2,3 +2,8 @@ baseURL = 'https://rinrin.me/'
 languageCode = 'ja'
 title = 'rinrin.me'
 paginate = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

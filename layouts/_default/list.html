@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<div class="posts">
+  {{ range .Paginator.Pages }}
+  <article>
+    <i class="bi bi-calendar"></i>
+    <time>{{ .Date.Format "2006-01-02" }}</time>
+    <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  </article>
+  {{ end }}
+
+  <section>
+    {{ with .Paginator.Prev }}
+    <a href="{{ .URL }}" role="button" class="outline"><i class="bi bi-arrow-left"></i></a>
+    {{ else }}
+    <a role="button" class="outline"><i class="bi bi-arrow-left"></i></a>
+    {{ end }}
+
+    {{ with .Paginator.Next }}
+    <a href="{{ .URL }}" role="button" class="outline"><i class="bi bi-arrow-right"></i></a>
+    {{ else }}
+    <a role="button" class="outline"><i class="bi bi-arrow-right"></i></a>
+    {{ end }}
+  </section>
+</div>
+
+{{ end }}

@@ -1,0 +1,32 @@
+.container {
+  max-width: 800px;
+}
+
+.site-title a {
+  --color: var(--h1-color);
+}
+
+.post-title {
+  margin: 0;
+}
+
+.post-title a {
+  --color: var(--h2-color);
+}
+
+.posts {
+  margin: var(--block-spacing-vertical) 0;
+}
+
+.posts article {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.posts section {
+  text-align: right;
+}
+
+pre {
+  background: #18232c !important;
+}

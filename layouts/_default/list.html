@@ -3,7 +3,7 @@
 <div class="posts">
   {{ range .Paginator.Pages }}
   <article>
-    <i class="bi bi-calendar"></i>
+    <i class="bi bi-calendar-event"></i>
     <time>{{ .Date.Format "2006-01-02" }}</time>
     <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
   </article>

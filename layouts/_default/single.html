@@ -2,7 +2,7 @@
 
 <article>
   <header>
-    <i class="bi bi-calendar"></i>
+    <i class="bi bi-calendar-event"></i>
     <time>{{ .Date.Format "2006-01-02" }}</time>
     <h1 class="post-title">{{ .Title }}</h1>
   </header>
@@ -10,8 +10,9 @@
   {{ .Content }}
 
   <footer>
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large"
-      data-lang="ja" data-show-count="false">Tweet</a>
+    <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}" role="button">
+      <i class="bi bi-twitter"></i> ツイート
+    </a>
   </footer>
 </article>
 

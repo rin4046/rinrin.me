@@ -1,5 +1,7 @@
 .container {
   max-width: 800px;
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
 }
 
 .site-title a {
@@ -19,8 +21,8 @@
 }
 
 .posts article {
-  margin: 1rem 0;
-  padding: 1rem;
+  margin: var(--spacing) 0;
+  padding: var(--spacing);
 }
 
 .posts section {
